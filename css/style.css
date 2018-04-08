@@ -9,7 +9,6 @@ div#loader {
 	height: 100%;
 	background: black;
 	position: absolute;
-	display: none;
 	z-index: 99;
 }
 div#l_img {
