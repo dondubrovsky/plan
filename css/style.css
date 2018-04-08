@@ -1,0 +1,94 @@
+body {
+	margin: 0;
+}
+* {
+	box-sizing: border-box;
+}
+div#loader {
+	width: 100%;
+	height: 100%;
+	background: black;
+	position: absolute;
+	display: none;
+	z-index: 99;
+}
+div#l_img {
+	width: 150px;
+	height: 150px;
+	background: url(../img/brain.png) no-repeat;
+	background-position: center;
+	background-size: contain;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -75px;
+	margin-left: -75px;
+	animation: load 1s;
+	animation-iteration-count: infinite;
+}
+@keyframes load {
+	50%  { transform: scale(1.1); }
+}
+div#body {
+	background: linear-gradient(#013243,#22A7F0);
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	padding-top: 50px;
+}
+div.calc {
+	width: 90%;
+	margin: auto;
+}
+input#balance {
+	width: 95%;
+	padding: 10px;
+	border-radius: 10px;
+	border: 1px solid transparent;
+	outline: none;
+	text-align: center;
+}
+input#balance::placeholder {
+	text-align: center;
+	color: grey;
+	font-size: 18px;
+}
+input#try {
+	width: 95%;
+	padding: 10px;
+	border-radius: 10px;
+	border: 1px solid transparent;
+	outline: none;
+	text-align: center;
+	margin-top: 20px;
+}
+input#try::placeholder {
+	text-align: center;
+	color: grey;
+	font-size: 18px;
+}
+div.calc button {
+	margin: auto;
+	font-size: 18px;
+	background: #663399;
+	border: none;
+	color: white;
+	padding: 5px 15px;
+	border-radius: 5px;
+	outline: none;
+	box-shadow:  0 0 10px black;
+	margin-left: 50%;
+	transform: translateX(-58.5px);
+	margin-top: 20px;
+}
+div.calc button:active {
+	background: red;
+}
+div#f_result {
+	font-size: 24px;
+	color: white;
+	margin-top: 20px;
+	height: 30px;
+	text-align: center;
+	display: none;
+}
