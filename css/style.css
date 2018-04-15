@@ -50,7 +50,7 @@ input#balance {
 input#balance::placeholder {
 	text-align: center;
 	color: grey;
-	font-size: 18px;
+	font-size: 16px;
 }
 input#try {
 	width: 100%;
@@ -64,7 +64,7 @@ input#try {
 input#try::placeholder {
 	text-align: center;
 	color: grey;
-	font-size: 18px;
+	font-size: 16px;
 }
 div.calc button {
 	margin: auto;
