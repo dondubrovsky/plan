@@ -10,6 +10,7 @@ div#loader {
 	background: black;
 	position: absolute;
 	z-index: 99;
+/	display: none;
 }
 div#l_img {
 	width: 150px;
@@ -34,6 +35,7 @@ div#body {
 	height: 100%;
 	width: 100%;
 	padding-top: 50px;
+	background: #E4F1FE;
 }
 div.calc {
 	width: 90%;
@@ -42,28 +44,38 @@ div.calc {
 input#balance {
 	width: 100%;
 	padding: 10px;
-	border-radius: 10px;
+/	border-radius: 10px;
 	border: 1px solid transparent;
 	outline: none;
 	text-align: center;
+	background: transparent;
 }
 input#balance::placeholder {
 	text-align: center;
-	color: grey;
+	color: #22313F;
 	font-size: 16px;
+}
+input#balance:focus {
+	border-bottom: 1px solid red;
+	transition: .5s;
+}
+input#try:focus {
+	border-bottom: 1px solid red;
+	transition: .5s;
 }
 input#try {
 	width: 100%;
 	padding: 10px;
-	border-radius: 10px;
+/	border-radius: 10px;
 	border: 1px solid transparent;
 	outline: none;
 	text-align: center;
 	margin-top: 20px;
+	background: transparent;
 }
 input#try::placeholder {
 	text-align: center;
-	color: grey;
+	color: #22313F;
 	font-size: 16px;
 }
 div.calc button {
@@ -72,22 +84,40 @@ div.calc button {
 	background: #663399;
 	border: none;
 	color: white;
-	padding: 5px 15px;
+/	padding: 5px 15px;
 	border-radius: 5px;
 	outline: none;
 	box-shadow:  0 0 10px black;
 	margin-left: 50%;
-	transform: translateX(-58.5px);
+	transform: translateX(-19.5px);
 	margin-top: 20px;
+	background: url(../img/calc.png) no-repeat;
+	background-size: cover;
+	border-radius: 50%;
+	padding: 20px;
 }
 div.calc button:active {
-	background: red;
+	box-shadow: 0 0 20px black;
+	transform: translate(-19.5px, 5px);
 }
 div#f_result {
+	width: 100%;
 	font-size: 24px;
-	color: white;
+	color: red;
 	margin-top: 20px;
 	height: 30px;
 	text-align: center;
 	display: none;
+	font-weight: bold;
+}
+p#demo {
+	font-size: 24px;
+	text-align: center;
+	color: #22313F;
+
+}
+p#demo span {
+	color: red;
+	font-weight: bold;
+	font-size: 36px;
 }
