@@ -34,24 +34,28 @@
 			var x = $('#balance').val();
 			var y = $('#try').val();
 			if (y == 1) {
-				$('#f_result').text((x / 50.342 * 1).toFixed(2) + ' ლარი');
+				$('#f_result').text((x / 29.562 * 1).toFixed(2) + ' ლარი');
 				$('#f_result').fadeIn(1500);
 			}if (y == 2) {
-				$('#f_result').text((x / 49.342 * 2.5).toFixed(2) + ' ლარი');
+				$('#f_result').text((x / 28.562 * 2.5).toFixed(2) + ' ლარი');
 				$('#f_result').fadeIn(1500);
 			}if (y == 3) {
-				$('#f_result').text((x / 46.842 * 4.75).toFixed(2) + ' ლარი');
+				$('#f_result').text((x / 26.062 * 4.75).toFixed(2) + ' ლარი');
 				$('#f_result').fadeIn(1500);
 			}if (y == 4) {
-				$('#f_result').text((x / 42.092 * 8.125).toFixed(2) + ' ლარი');
+				$('#f_result').text((x / 21.312 * 8.125).toFixed(2) + ' ლარი');
 				$('#f_result').fadeIn(1500);
 			}if (y == 5) {
-				$('#f_result').text((x / 33.967 * 13.187).toFixed(2) + ' ლარი');
-				$('#f_result').fadeIn(1500);
-			}if (y == 6) {
-				$('#f_result').text((x / 20.78 * 20.78).toFixed(2) + ' ლარი');
+				$('#f_result').text((x / 13.187 * 13.187).toFixed(2) + ' ლარი');
 				$('#f_result').fadeIn(1500);
 			}
+		})
+
+		$('#count').click(function(){
+			$('#count_b').slideDown(300);
+		})
+		$('#close').click(function(){
+			$('#count_b').slideUp(300);
 		})
 	})
 
